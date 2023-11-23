@@ -25,54 +25,63 @@
                     },
                 ],
             };
+        },
+        methods: {
+            getImagePath: function(img) {
+                return new URL(`../assets/img/$(img)`, import.meta.url).href;
+            }
         }
-    }
+    };
 </script>
 
 <template>
-    <div v-for="part in imgAndElement" class="container">
-        <ul>
+<div class="biggest-container">   
+    <div  class="container">
+        <ul v-for="part in imgAndElement">
             <li>
                 
                    <a  href="">
-                    <img  :src="`../assets/img/${part.image}`" alt="image"><span>{{ part.element }}</span>
+                    <img  :src="getImagePath(imgAndElement.image)" alt="img"><span>{{ part.element }}</span>
                    </a>   
             </li>
         </ul>
        
   
-    </div>    
+    </div> 
+</div>       
 </template>
 
 <style lang="scss" scoped>
-.container{
-background-color: hsl(208.67deg 100% 48.82%);
-color: white;
-width: 80%;
-margin: auto;
-padding: 2.5rem 1rem;
-justify-content: center;
+.biggest-container{
+    background-color:  hsl(208.67deg 100% 48.82%);
+    .container{
+    background-color: hsl(208.67deg 100% 48.82%);
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 2.5rem 1rem;
+    justify-content: center;
 
-    ul{
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-    justify-content: center; 
-     
-    }   
-        a{
+        ul{
+        list-style: none;
         display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: white;
-
-                img{
-                width: 2rem;
-                margin-right: 1rem;
-                }
-
+        gap: 3rem;
+        justify-content: center; 
+        
         }   
+            a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+
+                    img{
+                    width: 2rem;
+                    margin-right: 1rem;
+                    }
+
+            }   
+    }
+
 }
-
-
 </style> 

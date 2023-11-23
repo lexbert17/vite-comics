@@ -28,7 +28,6 @@
     margin: auto;
     justify-content: space-between;
     margin: auto;
-    background-color: green;
     height: 120px;
     align-items: center;
     
@@ -41,7 +40,7 @@
         display: flex;
         gap: 1rem;
         list-style: none;
-        background-color: orange;
+
         height: 100%;
         
 
