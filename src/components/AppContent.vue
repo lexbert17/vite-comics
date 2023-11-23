@@ -3,6 +3,7 @@
         data(){
             return{
                 content: "--> Content goes here <--"
+                
             }
         }
     }
@@ -18,7 +19,7 @@
     .container{
         width: 80%;
         margin: auto;
-        padding: 1.5rem 0;
+        padding: 2rem 0;
         background-color: yellow;
     }
 </style>
