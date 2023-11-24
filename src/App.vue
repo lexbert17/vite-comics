@@ -4,6 +4,7 @@ import AppContent from "./components/AppContent.vue";
 import AppNavigation from "./components/AppNavigation.vue"
 import AppDcListVue from "./components/AppDcList.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AppJumbotron from "./components/AppJumbotron.vue";
 
 export default {
   components: {
@@ -11,7 +12,8 @@ export default {
     AppContent,
     AppNavigation,
     AppDcListVue,
-    AppFooter
+    AppFooter,
+    AppJumbotron
 },
 }
 </script>
@@ -19,10 +21,13 @@ export default {
 <template>
 
 <AppHeader/>
+<AppJumbotron/>
 <AppContent/>
 <AppNavigation/>
 <AppDcListVue/>
 <AppFooter/>
+
+
 </template>
 
 
