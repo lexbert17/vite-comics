@@ -33,7 +33,7 @@
                 <div v-for="(element, index) in aboutDc" key="element" class="row">          
                     <h3>{{ element.title }}</h3>
                     <ul v-for="(elements, index) in aboutDc[index].list" key="element" >
-                        <li>{{elements }}</li>
+                        <li><a href="">{{elements }}</a></li>
                     </ul>          
                 </div>
             </div>    
@@ -71,6 +71,11 @@ section{
                     ul{
                         list-style: none;
                         font-size: .8rem;
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
                     }
                 }
 

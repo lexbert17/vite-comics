@@ -3,13 +3,15 @@ import AppHeader from "./components/appHeader.vue"
 import AppContent from "./components/AppContent.vue";
 import AppNavigation from "./components/AppNavigation.vue"
 import AppDcListVue from "./components/AppDcList.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   components: {
     AppHeader,
     AppContent,
     AppNavigation,
-    AppDcListVue
+    AppDcListVue,
+    AppFooter
 },
 }
 </script>
@@ -20,7 +22,7 @@ export default {
 <AppContent/>
 <AppNavigation/>
 <AppDcListVue/>
-
+<AppFooter/>
 </template>
 
 
