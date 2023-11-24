@@ -28,7 +28,7 @@
         },
         methods: {
             getImagePath: function(img) {
-                return new URL(`../assets/img/$(img)`, import.meta.url).href;
+                return new URL(`../assets/img/${img}`, import.meta.url).href;
             }
         }
     };
@@ -37,11 +37,10 @@
 <template>
 <div class="biggest-container">   
     <div  class="container">
-        <ul v-for="part in imgAndElement">
-            <li>
-                
+        <ul>
+            <li v-for="part in imgAndElement">
                    <a  href="">
-                    <img  :src="getImagePath(imgAndElement.image)" alt="img"><span>{{ part.element }}</span>
+                    <img  :src="getImagePath(part.image)" key="part.image" alt="img"><span>{{ part.element }}</span>
                    </a>   
             </li>
         </ul>
@@ -66,7 +65,8 @@
         list-style: none;
         display: flex;
         gap: 3rem;
-        justify-content: center; 
+        justify-content: space-between; 
+        align-items: center;
         
         }   
             a{

@@ -15,7 +15,7 @@
                 <img src="../assets/img/dc-logo.png" alt="img">
             </div>
             <ul>
-                <li v-for="item in navHeader"><a href="">{{ item }}</a></li>
+                <li v-for="item in navHeader" key="item" ><a href="">{{ item }}</a></li>
             </ul>
         </div>    
     </header>
@@ -28,7 +28,7 @@
     margin: auto;
     justify-content: space-between;
     margin: auto;
-    height: 120px;
+    height: 100px;
     align-items: center;
     
   
@@ -48,8 +48,8 @@
         color: black;
         text-decoration: none;
         display: block;
-        line-height: 120px;
-        height: 120px;
+        line-height: 100px;
+        height: 100px;
        
         
 
