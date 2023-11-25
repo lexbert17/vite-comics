@@ -45,6 +45,10 @@
                 background-color: hsl(0deg 0% 18.82%) ;
                 color: white;
                 padding: 0px 10px ;
+
+                &:hover{
+                    filter: brightness(1.75);
+                }
             }
 
             .icons{
